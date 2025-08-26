@@ -66,14 +66,18 @@ print("------------------------------")
 #notas = [[7, 8, 9], [6, 5, 7]] #No fim, imprima a média de cada aluno.
 
 print("Digite as notas do primeiro aluno:")
-
+aluno1 = []
+aluno2 = []
 for n in range(3):
     nota = float(input(f"Nota :"))
-    if n <= 3:
-        aluno1 = []
-        aluno1.append(nota)
+    aluno1.append(nota)
 notas = []
 notas.append(aluno1)
 print(notas)
-    
-    
+print("Digite as notas do segundo aluno:")
+for n in range(3):
+    nota = float(input(f"Nota :"))
+    aluno2.append(nota)
+notas.append(aluno2)
+print(notas)
+
